@@ -10,12 +10,14 @@ import {
   X,
 } from "@phosphor-icons/react";
 
+const asset = (filename) => `${import.meta.env.BASE_URL}assets/${filename}`;
+
 const members = [
-  { name: "Sahil Kaushal", role: "PhD Scholar · PMRF", years: "2022–Present", image: "/assets/image1.jpg" },
-  { name: "Shah Masudul Islam", role: "PhD Scholar", years: "2023–Present", image: "/assets/image2.jpg" },
-  { name: "Nandhana S", role: "PhD Scholar · DST–INSPIRE", years: "2025–Present", image: "/assets/image3.jpg" },
-  { name: "Shagun Sandal", role: "PhD Scholar", years: "2025–Present", image: "/assets/image4.jpg" },
-  { name: "E. S. Faizah", role: "MS Thesis", years: "2025–2026", image: "/assets/image5.jpg" },
+  { name: "Sahil Kaushal", role: "PhD Scholar · PMRF", years: "2022–Present", image: asset("image1.jpg") },
+  { name: "Shah Masudul Islam", role: "PhD Scholar", years: "2023–Present", image: asset("image2.jpg") },
+  { name: "Nandhana S", role: "PhD Scholar · DST–INSPIRE", years: "2025–Present", image: asset("image3.jpg") },
+  { name: "Shagun Sandal", role: "PhD Scholar", years: "2025–Present", image: asset("image4.jpg") },
+  { name: "E. S. Faizah", role: "MS Thesis", years: "2025–2026", image: asset("image5.jpg") },
 ];
 
 const alumni = [
@@ -34,12 +36,12 @@ const alumni = [
 ];
 
 const equipment = [
-  { name: "UAV drone", image: "/assets/image17.jpg", text: "High-resolution aerial imagery, terrain mapping, monitoring and 3D modelling." },
-  { name: "Terrestrial LiDAR", image: "/assets/image19.jpg", text: "Detailed 3D point clouds of slopes, structures and geomorphic features." },
-  { name: "Total station", image: "/assets/image20.jpg", text: "Precision land surveying and validation of remote-sensing datasets." },
-  { name: "GNSS", image: "/assets/image21.jpg", text: "High-accuracy positioning for ground control, surveys and georeferencing." },
-  { name: "UV–Vis spectrophotometer", image: "/assets/image24.png", text: "Chemical analysis of water and soil samples for environmental assessments." },
-  { name: "Muffle furnace", image: "/assets/image26.png", text: "Controlled high-temperature analysis of soil and sediment samples." },
+  { name: "UAV drone", image: asset("image17.jpg"), text: "High-resolution aerial imagery, terrain mapping, monitoring and 3D modelling." },
+  { name: "Terrestrial LiDAR", image: asset("image19.jpg"), text: "Detailed 3D point clouds of slopes, structures and geomorphic features." },
+  { name: "Total station", image: asset("image20.jpg"), text: "Precision land surveying and validation of remote-sensing datasets." },
+  { name: "GNSS", image: asset("image21.jpg"), text: "High-accuracy positioning for ground control, surveys and georeferencing." },
+  { name: "UV–Vis spectrophotometer", image: asset("image24.png"), text: "Chemical analysis of water and soil samples for environmental assessments." },
+  { name: "Muffle furnace", image: asset("image26.png"), text: "Controlled high-temperature analysis of soil and sediment samples." },
 ];
 
 const publications = [
@@ -52,14 +54,14 @@ const publications = [
 ];
 
 const gallery = [
-  { src: "/assets/image33.jpg", alt: "Field team studying a mountain slope" },
-  { src: "/assets/image34.jpg", alt: "UAV field deployment" },
-  { src: "/assets/image29.jpg", alt: "Researchers working beside a mountain river" },
-  { src: "/assets/image30.jpg", alt: "Survey instrumentation in mountainous terrain" },
-  { src: "/assets/image31.jpg", alt: "Researcher collecting field measurements" },
-  { src: "/assets/image32.jpg", alt: "GEOM Lab field team wearing safety vests" },
-  { src: "/assets/image35.jpg", alt: "Field team inspecting a steep slope" },
-  { src: "/assets/image37.jpg", alt: "Researcher servicing a monitoring station" },
+  { src: asset("image33.jpg"), alt: "Field team studying a mountain slope" },
+  { src: asset("image34.jpg"), alt: "UAV field deployment" },
+  { src: asset("image29.jpg"), alt: "Researchers working beside a mountain river" },
+  { src: asset("image30.jpg"), alt: "Survey instrumentation in mountainous terrain" },
+  { src: asset("image31.jpg"), alt: "Researcher collecting field measurements" },
+  { src: asset("image32.jpg"), alt: "GEOM Lab field team wearing safety vests" },
+  { src: asset("image35.jpg"), alt: "Field team inspecting a steep slope" },
+  { src: asset("image37.jpg"), alt: "Researcher servicing a monitoring station" },
 ];
 
 const navItems = ["Research", "People", "Facilities", "Publications", "Gallery"];
@@ -92,7 +94,7 @@ export function App() {
     <>
       <header className="site-header">
         <a className="brand" href="#top" onClick={closeMenu} aria-label="GEOM Lab home">
-          <img src="/assets/geom-logo.png" alt="GEOM Lab" />
+          <img src={asset("geom-logo.png")} alt="GEOM Lab" />
           <span><strong>GEOM LAB</strong><small>IISER Mohali</small></span>
         </a>
         <nav className={menuOpen ? "nav open" : "nav"} aria-label="Primary navigation">
@@ -116,7 +118,7 @@ export function App() {
             </div>
           </div>
           <div className="hero-visual">
-            <img src="/assets/image17.jpg" alt="GEOM Lab drone survey in the mountains" />
+            <img src={asset("image17.jpg")} alt="GEOM Lab drone survey in the mountains" />
             <div className="hero-badge"><Mountains weight="duotone" /><span>Field science<br />from ridge to river</span></div>
           </div>
           <div className="hero-stat"><strong>4</strong><span>continents of research experience</span></div>
@@ -132,7 +134,7 @@ export function App() {
             <article className="research-feature">
               <span>01</span><h3>Landslides & natural hazards</h3>
               <p>We study co-seismic, post-seismic and rainfall-induced landslides, from failure controls to sediment budgets and cascading risk.</p>
-              <img src="/assets/image22.jpg" alt="Field survey of a landslide-affected river valley" />
+              <img src={asset("image22.jpg")} alt="Field survey of a landslide-affected river valley" />
             </article>
             <div className="research-stack">
               <article><span>02</span><h3>Remote sensing & AI</h3><p>Satellite, UAV and machine-learning methods turn large datasets into actionable terrain intelligence.</p></article>
@@ -143,7 +145,7 @@ export function App() {
         </section>
 
         <section className="section pi-section">
-          <div className="pi-image"><img src="/assets/yunus-ali-pulpadan.jpeg" alt="Dr. Yunus Ali Pulpadan" /></div>
+          <div className="pi-image"><img src={asset("yunus-ali-pulpadan.jpeg")} alt="Dr. Yunus Ali Pulpadan" /></div>
           <div className="pi-copy">
             <p className="eyebrow">Principal investigator</p>
             <h2>Dr. Yunus Ali Pulpadan</h2>
@@ -219,7 +221,7 @@ export function App() {
         </section>
       </main>
 
-      <footer><a className="brand footer-brand" href="#top"><img src="/assets/geom-logo.png" alt="" /><span><strong>GEOM LAB</strong><small>IISER Mohali</small></span></a><p>Geomorphology of Mountains & Valleys Lab</p><p>© {new Date().getFullYear()} GEOM Lab</p></footer>
+      <footer><a className="brand footer-brand" href="#top"><img src={asset("geom-logo.png")} alt="" /><span><strong>GEOM LAB</strong><small>IISER Mohali</small></span></a><p>Geomorphology of Mountains & Valleys Lab</p><p>© {new Date().getFullYear()} GEOM Lab</p></footer>
 
       {activeImage && (
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={activeImage.alt} onClick={() => setActiveImage(null)}>
