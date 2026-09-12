@@ -15,6 +15,7 @@ import {
   Waves,
   X,
 } from "@phosphor-icons/react";
+import publications from "./data/publications.json";
 
 const asset = (filename) => `${import.meta.env.BASE_URL}assets/${filename}`;
 
@@ -56,15 +57,6 @@ const equipment = [
   { name: "UV–Vis spectrophotometer", image: asset("image24.png"), text: "Chemical analysis of water and soil samples for environmental assessments." },
   { name: "Ground Penetrating Radar (GPR)", image: asset("image30.jpg"), text: "Subsurface imaging for shallow stratigraphy, buried structures and landslide investigations." },
   { name: "Electrical Resistivity Tomography (ERT)", image: asset("image31.jpg"), text: "Geophysical profiling of subsurface moisture, weathering and material contrasts." },
-];
-
-const publications = [
-  { year: "2025", title: "Rapid evacuation of suspended sediment loads during landslides in steep gradient rivers", journal: "Environmental Research Communications 7(3), 031002" },
-  { year: "2025", title: "Unveiling the amplifying impact: Anthropogenic activities and the two-fold surge in landslides in the Lesser Himalayas", journal: "CATENA 250, 108771" },
-  { year: "2025", title: "Towards synergistic AI-driven ensemble framework for earthquake and rainfall induced landslide risks in Sikkim Himalayas", journal: "Natural Hazards" },
-  { year: "2025", title: "Decoding the dynamics of July 2024 Mundakkai–Chooralmala landslide in Kerala", journal: "Landslides" },
-  { year: "2024", title: "A rapid run-out assessment methodology for the 2024 Wayanad debris flow", journal: "npj Natural Hazards 1(1)" },
-  { year: "2024", title: "Numerical model derived intensity-duration thresholds for early warning of rainfall-induced debris flows in the Himalayas", journal: "Natural Hazards and Earth System Sciences" },
 ];
 
 const projects = [

@@ -1,0 +1,31 @@
+name: Update Scholar Publications
+
+on:
+  schedule:
+    - cron: "30 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch Google Scholar publications
+        run: node scripts/update-scholar-publications.mjs
+
+      - name: Commit publication updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update recent publications from Google Scholar"
+          file_pattern: src/data/publications.json
