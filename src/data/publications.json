@@ -1,6 +1,12 @@
 [
   {
     "year": "2026",
+    "title": "Monsoon Hydroclimatic Hazards in the Himalaya: Patterns, Drivers and Impacts",
+    "journal": "Himalayan Natural Hazards, 245-267, 2026",
+    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=l3WMApQAAAAJ&sortby=pubdate&citation_for_view=l3WMApQAAAAJ:XvxMoLDsR5gC"
+  },
+  {
+    "year": "2026",
     "title": "ALERT: A Scalable Cloud-Native Framework for Satellite Rainfall-Driven Landslide Early Warning in Data-Scarce Regions",
     "journal": "EGUsphere 2026, 1-38, 2026",
     "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=l3WMApQAAAAJ&sortby=pubdate&citation_for_view=l3WMApQAAAAJ:HtEfBTGE9r8C"
@@ -40,11 +46,5 @@
     "title": "High‐resolution LiDAR and stereo‐DEMs for debris flow analysis in the Western Ghats, India: Sediment volume computation and run‐out modeling",
     "journal": "Earth Surface Processes and Landforms 51 (3), e70272, 2026",
     "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=l3WMApQAAAAJ&sortby=pubdate&citation_for_view=l3WMApQAAAAJ:_axFR9aDTf0C"
-  },
-  {
-    "year": "2026",
-    "title": "Beyond generalisation: regionally calibrated feature selection with machine learning for data-driven landslide hazard assessment in the Himalayas",
-    "journal": "Earth Systems and Environment, 1-21, 2026",
-    "href": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=l3WMApQAAAAJ&sortby=pubdate&citation_for_view=l3WMApQAAAAJ:PVjk1bu6vJQC"
   }
 ]
